@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Aula17</title>
+</head>
+
+<body>
+    <label for="1Titulo"> Exemplo 1 - Evento: onclick</label>
+    <label for="1Titulo"> Este exemplo exibe uma mensagem simples utilizando o input -button</label>
+
+<br>
+
+    <input type="button" value="Clique aqui" onclick="mostraAlerta()">
+
+<br><br>
+
+    <input type="button" value="Clique este ponto" onclick="mostraAlerta1('Marcos')">
+
+<br><br>
+
+    <!-- Trabalhando com função -->
+
+    <div>
+    <label for="1Texto">Digite algo aqui:</label>
+        <input type="text" name="nTexto" id="idTexto">
+        <input type="button" value="Clique neste local" onclick="idResultado.value = mensagem_com_parametro_return(idTexto.value)">
+
+<br><br>
+
+    <label for="nResultado">Resultudo:</label>
+        <input type="text" name="nResult" id="idResultado">    
+    </div> 
+
+<br> <br><br>
+
+<label for="1Texto">Digite um numero: </label>
+    <input type="number" name="nh1"id="n1" > 
+
+    <br> <br><br>
+
+    <label for="1Texto">Digite outro numero: </label>
+        <input type="number" name="nh2"id="n2" >
+
+        <br>
+        
+        <input type="button" value="Clique aqui" onclick="idSoma.value =somaF( n1.value,n2.value)"> 
+
+    <br><br>
+    
+        <label for="nSoma">Resultudo:</label>
+        <input type="number" name="nSomat" id="idSoma">
+   
+</body>
+
+</html>
